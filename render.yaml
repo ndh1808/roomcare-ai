@@ -1,0 +1,25 @@
+# Optional alternative to Streamlit Community Cloud.
+# This file does not provision a paid database. Add your existing database URL.
+services:
+  - type: web
+    name: roomcare-ai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m streamlit run app.py --server.address=0.0.0.0 --server.port=$PORT
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: DEMO_MODE
+        value: "false"
+      - key: BUILDING_NAME
+        value: "Nhà trọ An Nhiên"
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD_HASH
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
