@@ -2,7 +2,9 @@
 
 Ứng dụng web tiếng Việt giúp sinh viên báo sự cố phòng trọ và chủ trọ theo dõi việc xử lý. MVP dùng **Python + Streamlit**, **Gemini** và **SQLite / PostgreSQL (Supabase)**.
 
-Repository GitHub: [ndh1808/roomcare-ai](https://github.com/ndh1808/roomcare-ai). Xem [hướng dẫn triển khai](docs/DEPLOYMENT.md) để tạo website từ repository này; một link repository không đồng nghĩa ứng dụng đã được triển khai.
+**Web demo đang hoạt động:** [roomcare-ai-ndh1808.streamlit.app](https://roomcare-ai-ndh1808.streamlit.app/)
+
+Repository GitHub: [ndh1808/roomcare-ai](https://github.com/ndh1808/roomcare-ai). Bản web hiện dùng fallback demo + SQLite tạm trên hosting, chỉ dùng dữ liệu giả. Xem [trạng thái bàn giao](docs/DEPLOYMENT_STATUS.md) và [hướng dẫn bật Gemini/Supabase](docs/DEPLOYMENT.md).
 
 ## Chức năng
 
